@@ -10,7 +10,6 @@ import UIKit
 
 class DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var detailTableView: UITableView!
@@ -35,8 +34,6 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         self.detailTableView.delegate = self
         self.detailTableView.dataSource = self
     }
-    
-
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return 3
