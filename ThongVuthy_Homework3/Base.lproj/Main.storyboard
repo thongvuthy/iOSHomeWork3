@@ -25,11 +25,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="xaw-jV-ngT">
+                        <barButtonItem key="leftBarButtonItem" title="  " id="iEU-1v-x0B"/>
                         <connections>
                             <outlet property="titleView" destination="pKC-cp-IPD" id="S92-4j-CSS"/>
                         </connections>
                     </navigationItem>
                     <connections>
+                        <outlet property="barItem" destination="iEU-1v-x0B" id="yDt-E7-vf6"/>
                         <outlet property="mainTable" destination="pKC-cp-IPD" id="9WS-WE-kzS"/>
                         <outlet property="navigationBarz" destination="xaw-jV-ngT" id="hQ4-Px-4qj"/>
                         <segue destination="4Pr-Sb-A4Y" kind="show" identifier="show" id="qnO-vY-Zj0"/>

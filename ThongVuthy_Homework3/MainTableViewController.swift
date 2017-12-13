@@ -11,7 +11,8 @@ import UIKit
 class MainTableViewController: UITableViewController {
     @IBOutlet weak var navigationBarz: UINavigationItem!
     @IBOutlet var mainTable: UITableView!
-
+    @IBOutlet weak var barItem: UIBarButtonItem!
+    
     var argument : [Any]?
     var data = [
         [ [#imageLiteral(resourceName: "yada&cheko"), #imageLiteral(resourceName: "MProduction")], ["ស្រឡាញ់គ្នាហេតុអ្វីចង់បែក - យ៉ាដា ft. ឆេកូ VCD.vol 76 M Production ", "M Production", "2M Views", "5 Hours ago"] ],
@@ -30,10 +31,10 @@ class MainTableViewController: UITableViewController {
         let nib = UINib(nibName: "TableViewCellX", bundle: nil)
         mainTable.register(nib, forCellReuseIdentifier: "tablecellx")
         
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "new-youtube-logo"))
-       imageView.contentMode = .scaleAspectFit
-        navigationBarz.titleView = imageView
-
+//        let imageView = UIImageView(image: #imageLiteral(resourceName: "new-youtube-logo"))
+//       imageView.contentMode = .scaleAspectFit
+//        navigationBarz.titleView = imageView
+        barItem.setBackgroundImage(#imageLiteral(resourceName: "youtube-logo25"), for: .normal, barMetrics: .default)
       
    
     }
